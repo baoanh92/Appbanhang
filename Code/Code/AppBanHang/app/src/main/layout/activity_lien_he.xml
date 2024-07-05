@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.manager.appbanhang.activity.LienHeActivity"
+    android:background="@drawable/aa"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toobar"
+        app:title="Cách thức liên hệ"
+        android:background="#70CDF8"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@drawable/boder"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:padding="5dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_person_24" />
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:textSize="25sp"
+                android:text="Họ và tên: Hà Mai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:background="@drawable/boder"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:padding="5dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_email_24" />
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:textSize="24sp"
+                android:text="Email: hamai@gmail.com"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:background="@drawable/boder"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:padding="5dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_phone_24" />
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:textSize="25sp"
+                android:text="Phone: 0767039217"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

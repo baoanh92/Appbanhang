@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.manager.appbanhang.activity.ThongKeDonHangHomNay">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbback"
+        app:title="Thông tin đơn hàng ngày hôm nay"
+        android:background="#5BC8FA"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Layout chứa EditText và Button để chọn ngày -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Chọn ngày cần xem"
+            android:enabled="false"
+            android:inputType="text"
+            android:background="#0000"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/buttonDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chọn ngày" />
+    </LinearLayout>
+
+    <!-- Spinner for selection -->
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"/>
+
+    <!-- EditText để tìm kiếm -->
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="Tìm kiếm..."
+        android:inputType="text"
+        android:maxLines="1"
+        android:singleLine="true" />
+
+    <!-- ListView hiển thị danh sách -->
+    <ListView
+        android:id="@+id/list_item_sell"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

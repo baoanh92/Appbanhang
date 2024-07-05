@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:elevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/itemdt_ten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thông tin phản hồi"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID: "
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/mess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tin nhắn hỏi: "
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/messAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tin nhắn phản hồi: "
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
